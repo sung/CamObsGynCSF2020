@@ -15,15 +15,15 @@ var quiz_count = 0;
 // or javascript object
 $.fn.quiz = function(filename, stallAttend) {
   if (typeof filename === "string") {
-    $.getJSON(filename, render.bind(this));
+    $.getJSON(filename, render.bind(this, stallAttend));
   } else {
-    render.call(this, filename);
+    render.call(this, filename, stallAttend);
   }
 };
 
 // create html structure for quiz
 // using loaded questions json
-function render(quiz_opts) {
+function render(quiz_opts, stallAttend) {
 
 
   // list of questions to insert into quiz
