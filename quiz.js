@@ -13,17 +13,17 @@ var quiz_count = 0;
 // quiz structure from question json file
 // "filename" can be path to question json
 // or javascript object
-$.fn.quiz = function(filename, stallAttend) {
+$.fn.quiz = function(filename) {
   if (typeof filename === "string") {
     $.getJSON(filename, render.bind(this));
   } else {
-    render.call(this, filename, stallAttend);
+    render.call(this, filename);
   }
 };
 
 // create html structure for quiz
 // using loaded questions json
-function render(quiz_opts, stallAttend) {
+function render(quiz_opts) {
 
 
   // list of questions to insert into quiz
