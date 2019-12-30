@@ -14,8 +14,6 @@
   <meta property="og:image" content="https://pbs.twimg.com/profile_images/478174073386577920/KhPCN0HA_400x400.jpeg" />
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:url" content="https://sung.github.io/CamObsGynCSF2020">
-
-
   <title>Pregnancy Myth Quiz</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -29,6 +27,10 @@
   <!-- <link rel="stylesheet" href="bootstrap-3.3.2/css/bootstrap.css"> -->
   <link rel='stylesheet' href='css/style.css'>
   <link rel="shortcut icon" href="favicon.ico">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="sweet-alert.min.js"></script>
+  <script src="quiz.js"></script>
   <style>
     #quiz {
       height: 600px;
@@ -108,10 +110,6 @@
 </div>
 
 
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="sweet-alert.min.js"></script>
-  <script src="quiz.js"></script>
   <script>
         function toggle_visibility(id) {
             var e = document.getElementById(id);
@@ -178,28 +176,48 @@
   })
 
 
-     var lastScrollTop = 0;
-     var animating = false;
-$(window).on("scroll", function(event){
-   var st = $(this).scrollTop();
-   if(! animating){
-     console.log(st, lastScrollTop)
-     if (st > lastScrollTop){
-            // console.log("down")
-         animating = true;
-         $(".topnav").finish().animate({top:"-80px"}, 600, function(){ animating = false})
-         // $("#footer").finish().animate({bottom:"0px"}, 600, function(){ animating = false})
-     } else {
-        // upscroll code
-        // console.log("up")
-        animating = true;
-        $(".topnav").finish().animate({top:"0px"}, 600, function(){ animating = false})
-         // $("#footer").finish().animate({bottom:"-80px"}, 600, function(){ animating = false})
-     }
-    }
-   lastScrollTop = st;
-});
+    var lastScrollTop = 0;
+    var animating = false;
+    $(window).on("scroll", function(event){
+    var st = $(this).scrollTop();
+    if(! animating){
+        console.log(st, lastScrollTop)
+        if (st > lastScrollTop){
+                // console.log("down")
+            animating = true;
+            $(".topnav").finish().animate({top:"-80px"}, 600, function(){ animating = false})
+            // $("#footer").finish().animate({bottom:"0px"}, 600, function(){ animating = false})
+        } else {
+            // upscroll code
+            // console.log("up")
+            animating = true;
+            $(".topnav").finish().animate({top:"0px"}, 600, function(){ animating = false})
+            // $("#footer").finish().animate({bottom:"-80px"}, 600, function(){ animating = false})
+        }
+        }
+    lastScrollTop = st;
+    });
 
+    var stallAttend=0;
+    $(window).load(function(){
+        swal({
+                title: "Have you looked our stall yet?",
+                type: "info",
+                showCancelButton: true,
+                confirmButtonText: "Yes, I've been through!",
+                cancelButtonText: "No, I haven't yet.",
+                closeOnConfirm: false,
+                closeOnCancel: false
+        }, 
+        function(isConfirm) {
+            if (isConfirm) {
+                stallAttend=1;
+                swal("Thanks!", "Enjoy the quiz.", "success");
+            } else {
+                swal("OK", "Please visit our stall and have this test again", "error");
+            }
+        });
+    });
 
     $(function() {
       $('#quiz').quiz("pregnancy_myth.json");

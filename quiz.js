@@ -92,6 +92,7 @@ function render(quiz_opts) {
     .attr("class", "quiz-answers")
     .css("margin-bottom","50px")
     .appendTo($title_slide);
+
 var $dummy2 = $("<div>")
   .text("a")
   .css("color","white")
@@ -99,6 +100,7 @@ var $dummy2 = $("<div>")
 
 var $indicators = $('<ol>')
     .attr('class', 'progress-circles')
+
 var $dummy = $("<div>")
   .text("a")
   .css("color","white")
@@ -342,7 +344,7 @@ var $dummy3 = $("<div>")
       .attr('height', $quiz.height() + "px");
   });
 
-}
+} // end of render()
 
 function resultsText(state) {
 
