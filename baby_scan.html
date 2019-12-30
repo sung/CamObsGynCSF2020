@@ -53,13 +53,6 @@
     }
   </script>
 
-    <script>
-        $(window).load(function(){
-                swal("Welcome!", "Welcome to the site!", "success");
-              
-        });
-    </script>
-
 </head>
 <body>
 
@@ -185,28 +178,48 @@
   })
 
 
-     var lastScrollTop = 0;
-     var animating = false;
-$(window).on("scroll", function(event){
-   var st = $(this).scrollTop();
-   if(! animating){
-     console.log(st, lastScrollTop)
-     if (st > lastScrollTop){
-            // console.log("down")
-         animating = true;
-         $(".topnav").finish().animate({top:"-80px"}, 600, function(){ animating = false})
-         // $("#footer").finish().animate({bottom:"0px"}, 600, function(){ animating = false})
-     } else {
-        // upscroll code
-        // console.log("up")
-        animating = true;
-        $(".topnav").finish().animate({top:"0px"}, 600, function(){ animating = false})
-         // $("#footer").finish().animate({bottom:"-80px"}, 600, function(){ animating = false})
-     }
-    }
-   lastScrollTop = st;
-});
+    var lastScrollTop = 0;
+    var animating = false;
+    $(window).on("scroll", function(event){
+    var st = $(this).scrollTop();
+    if(! animating){
+        console.log(st, lastScrollTop)
+        if (st > lastScrollTop){
+                // console.log("down")
+            animating = true;
+            $(".topnav").finish().animate({top:"-80px"}, 600, function(){ animating = false})
+            // $("#footer").finish().animate({bottom:"0px"}, 600, function(){ animating = false})
+        } else {
+            // upscroll code
+            // console.log("up")
+            animating = true;
+            $(".topnav").finish().animate({top:"0px"}, 600, function(){ animating = false})
+            // $("#footer").finish().animate({bottom:"-80px"}, 600, function(){ animating = false})
+        }
+        }
+    lastScrollTop = st;
+    });
 
+    var stallAttend=0;
+    $(window).load(function(){
+        swal({
+                title: "Have you looked our stall yet?",
+                type: "info",
+                showCancelButton: true,
+                confirmButtonText: "Yes, I've been through!",
+                cancelButtonText: "No, I haven't yet.",
+                closeOnConfirm: false,
+                closeOnCancel: false
+        }, 
+        function(isConfirm) {
+            if (isConfirm) {
+                stallAttend=1;
+                swal("Thanks!", "Enjoy the quiz.", "success");
+            } else {
+                swal("OK", "Please visit our stall and have this test again", "error");
+            }
+        });
+    });
 
     $(function() {
       $('#quiz').quiz("baby_scan.json");
