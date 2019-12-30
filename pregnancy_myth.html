@@ -224,7 +224,7 @@
     lastScrollTop = st;
     });
 
-    var stallAttend=false;
+    var stallAttend=0;
     $(window).load(function(){
         swal({
                 title: "Have you looked our stall yet?",
@@ -237,7 +237,7 @@
         }, 
         function(isConfirm) {
             if (isConfirm) {
-                stallAttend=true;
+                stallAttend=1;
                 swal("Thanks!", "Enjoy the quiz.", "success");
             } else {
                 swal("OK", "Please visit our stall and have this test again", "error");
