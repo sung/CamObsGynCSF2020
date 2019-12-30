@@ -15,9 +15,9 @@ var quiz_count = 0;
 // or javascript object
 $.fn.quiz = function(filename, stallAttend) {
   if (typeof filename === "string") {
-    $.getJSON(filename, render.bind(this, stallAttend));
+    $.getJSON(filename, render.bind(this));
   } else {
-    render.call(this, filename, stallAttend);
+    render.call(this, filename);
   }
 };
 
