@@ -344,14 +344,14 @@ var $dummy3 = $("<div>")
   });
 
     // below from Sung via google firestore
-    var newScoreRef = db.collection("quiz_score").doc();
-    var newScore={
-        target: quiz_opts.title, 
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        attend: stallAttend,
-        score: state.correct
-    };
-    newScoreRef.set(newScore);
+    //var newScoreRef = db.collection("quiz_score").doc();
+    //var newScore={
+    //    target: quiz_opts.title, 
+    //    timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    //    attend: stallAttend,
+    //    score: state.correct
+    //};
+    //newScoreRef.set(newScore);
 } // end of render()
 
 function resultsText(state) {
