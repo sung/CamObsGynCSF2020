@@ -1,0 +1,57 @@
+// baby scanned imsage quiz
+// compiled by Sung Gong <ssg29@cam.ac.uk>; https://sung.github.io
+
+url: https://sung.github.io/CamObsGynCSF2020
+
+// this is the title of the quiz
+# What can you see?
+
+1) What can you see?
+    * Chin
+    - Arm
+    - Toe  
+    - Tummy
+    (image) images/q1_chin.png
+
+2) What can you see?
+    - Eye
+    * Sacrum
+    - Toe
+    - Tummy
+    (image) images/q2_sacrum.png
+
+3) What can you see?
+    * Nostril
+    - Head
+    - Toe 
+    - Belly 
+    (image) images/q4_left_nostril.png
+
+4) What can you see?
+    - Elbow
+    - Tummy 
+    - Arm
+    * Heel
+    (image) images/q9_heel.png
+
+5) What can you see?
+    - Knee
+    - Finger
+    * Toe
+    - Tummy 
+    (image) images/q11_big_toe.png
+
+6) What can you see?
+    * Finger
+    - Toe
+    - Knee
+    - Chin
+    (image) images/q12_little_finger.png
+
+7) What can you see?
+    - Tummy
+    - Sacrum
+    - Toe
+    * Cerebellum
+    (image) images/q3_cerebellum.png
+

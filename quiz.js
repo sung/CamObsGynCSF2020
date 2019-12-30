@@ -302,6 +302,7 @@ var $dummy = $("<div>")
   var $links = $("<div>")
     .attr('class', 'results-social')
     .html('<div id = "links-text">To find out more about pregnancy myth, read <a href="https://www.tommys.org/pregnancy-information/im-pregnant/early-pregnancy/10-pregnancy-myths">this article</a> from <em>Tommy\'s.</div>')
+    .html('<div id = "links-text2">To find out more about ultrasound scans in pregnancy, read <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/ultrasound-anomaly-baby-scans-pregnant/">this NHS website</a><em>.</div>')
     .appendTo($results_slide);
 
   var $social = $("<div>")
