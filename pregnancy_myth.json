@@ -9,8 +9,8 @@
         "index": 1,
         "text": "You will probably find that you are hungrier than usual, but you don't need to \"eat for two\" \u2013 even if you are expecting twins or triplets."
       },
-      "image": "images/DeptObsGyn.jpg",
-      "image_credit": "Can you make/prepare some images to accompony with the quiz?",
+      "image": "images/zach-lucero-fwjsBPbRm4g-unsplash.jpg",
+      "image_credit": "Zach Lucero",
       "number": 1,
       "prompt": "Do you have to eat for two when you are pregnant?"
     },
@@ -25,8 +25,8 @@
         "index": 3,
         "text": "Raw fish, meat, eggs and mouldy soft cheeses carry a risk for infection and generally need to be fully cooked before consumption. Liver contains excessive amounts of vitamin A which can harm a developing baby. Consult NHS guidelines on pregnancy diet to find a full list of foods to avoid."
       },
-      "image": "images/kelly-sikkema-k4xoACkQZiw-unsplash.jpg",
-      "image_credit": "Can I use this photo?",
+      "image": "images/kelly-sikkema-IE8KfewAp-w-unsplash.jpg",
+      "image_credit": "Kelly Sikkema",
       "number": 2,
       "prompt": "What foods do you need to avoid when pregnant?"
     },
@@ -40,8 +40,8 @@
         "index": 0,
         "text": "Keep up your normal daily physical activity or exercise (sport, running, yoga, dancing, or even walking to the shops and back) for as long as you feel comfortable. Exercise is not dangerous for your baby \u2013 there is some evidence that active women are less likely to experience problems in later pregnancy and labour. However, don't exhaust yourself. Remember that exercise doesn't have to be strenuous to be beneficial. You may need to slow down as your pregnancy progresses or if your maternity team advises you to. If in doubt, consult your maternity team."
       },
-      "image": "images/kelly-sikkema-k4xoACkQZiw-unsplash.jpg",
-      "image_credit": "Can I use this photo?",
+      "image": "images/zach-lucero-fwjsBPbRm4g-unsplash.jpg",
+      "image_credit": "Zach Lucero",
       "number": 3,
       "prompt": "Can you exercise during pregnancy?"
     },
@@ -55,7 +55,7 @@
         "text": "You can eat peanuts or food containing peanuts, such as peanut butter, during pregnancy, unless you're allergic to them or a health professional advises you not to."
       },
       "image": "images/aaron-burden-1zR3WNSTnvY-unsplash.jpg",
-      "image_credit": "Can I use this photo?",
+      "image_credit": "Aaron Burden",
       "number": 4,
       "prompt": "Will eating peanuts while pregnant give your baby allergies?"
     },
@@ -69,7 +69,7 @@
         "text": "No, this is a popular myth but there is no evidence that spicy food can induce labour."
       },
       "image": "images/sean-roy-wdx65cr1xJ8-unsplash.jpg",
-      "image_credit": "Can I use this photo?",
+      "image_credit": "Sean Roy",
       "number": 5,
       "prompt": "Can eating spicy food induce labour?"
     }

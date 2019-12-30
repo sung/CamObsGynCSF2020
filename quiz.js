@@ -74,7 +74,7 @@ function render(quiz_opts) {
     .attr('class', 'quiz-title')
     .appendTo($title_slide);
   $('<p>')
-    .text("published on December 12, 2019")
+    .text("published on March 22, 2020")
     .attr('class', 'published-on-date')
     .appendTo($title_slide);
   $('<img>')
@@ -301,8 +301,7 @@ var $dummy = $("<div>")
 
   var $links = $("<div>")
     .attr('class', 'results-social')
-    .html('<div id = "links-text">To find out more about pregnancy myth, read <a href="https://www.tommys.org/pregnancy-information/im-pregnant/early-pregnancy/10-pregnancy-myths">this article</a> from <em>Tommy\'s.</div>')
-    .html('<div id = "links-text2">To find out more about ultrasound scans in pregnancy, read <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/ultrasound-anomaly-baby-scans-pregnant/">this NHS website</a><em>.</div>')
+    .html('<div id = "links-text">To find out more, read <a href="https://www.tommys.org/pregnancy-information/im-pregnant/early-pregnancy/10-pregnancy-myths">this article</a> from <em>Tommy\'s</em> and <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/ultrasound-anomaly-baby-scans-pregnant/"><em>this NHS website</em></a>.</div>')
     .appendTo($results_slide);
 
   var $social = $("<div>")
