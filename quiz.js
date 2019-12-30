@@ -13,11 +13,11 @@ var quiz_count = 0;
 // quiz structure from question json file
 // "filename" can be path to question json
 // or javascript object
-$.fn.quiz = function(filename) {
+$.fn.quiz = function(filename, stallAttend) {
   if (typeof filename === "string") {
-    $.getJSON(filename, render.bind(this));
+    $.getJSON(filename, render.bind(this, stallAttend));
   } else {
-    render.call(this, filename);
+    render.call(this, filename, stallAttend);
   }
 };
 
@@ -268,19 +268,18 @@ var $dummy = $("<div>")
           }
           // unbind event handler
           $('.sweet-overlay').off('click', next);
-        }
+        } // end of next()
 
         // advance to next question on OK click or
         // click of overlay
         swal(opts, next);
         $('.sweet-overlay').on('click', next);
 
-      });
+      }); // event of clicking answer
 
-    });
+    }); // end of each answers
 
-
-  });
+  }); // end of each questions
 
 
   // final results slide
@@ -344,6 +343,15 @@ var $dummy3 = $("<div>")
       .attr('height', $quiz.height() + "px");
   });
 
+    // below from Sung via google firestore
+    var newScoreRef = db.collection("quiz_score").doc();
+    var newScore={
+        target: "pregnancy_myth",
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        attend: stallAttend,
+        score: state.correct
+    }
+    newScoreRef.set(newScore);
 } // end of render()
 
 function resultsText(state) {
