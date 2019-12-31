@@ -1,8 +1,16 @@
-# Quiz for the Science Festival 2020
+# It takes three to tango
 
-* Source code [here](https://github.com/sung/CamObsGynCSF2020)
-* Demo [here](https://sung.github.io/CamObsGynCSF2020)
+a [Science Festival](https://www.sciencefestival.cam.ac.uk/) stall from [the Department of Obs & Gynae](https://www.obgyn.cam.ac.uk/), [University of Cambridge](https://www.cam.ac.uk/)
+
+## Quiz for the Science Festival 2020
+* [Mum](https://sung.github.io/CamObsGynCSF2020/pregnancy_myth.html)
+* [Baby](https://sung.github.io/CamObsGynCSF2020/baby_scan.html)
+* [Placenta]()
 
 
-----
-[Sung Gong](https://sung.github.io)
+## References
+* [Source code](https://github.com/sung/CamObsGynCSF2020)
+* [Web site](https://sung.github.io/CamObsGynCSF2020)
+
+--
+Developed and maintained by [Sung Gong](https://sung.github.io)
