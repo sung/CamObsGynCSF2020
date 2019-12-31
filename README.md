@@ -1,6 +1,6 @@
-# It takes 3 to Tango: Key players for a successful pregnancy
+# It takes 3 to Tango: Key players for a successful pregnancy [QR https://sung.github.io/CamObsGynCSF2020]
 Hello! 
-We are students and postdocs from the [Department of Obs & Gynae](https://www.obgyn.cam.ac.uk/), [University of Cambridge](https://www.cam.ac.uk/) and we run a [Science Festival](https://www.sciencefestival.cam.ac.uk/) stall.
+We are postdocs from the [Department of Obs & Gynae](https://www.obgyn.cam.ac.uk/), [University of Cambridge](https://www.cam.ac.uk/) and we run a [Science Festival](https://www.sciencefestival.cam.ac.uk/) stall.
 
 ## Description
 Learn about the key players in a healthy pregnancy: the mum, the baby and the placenta. Discuss the latest research at the [Department of Obstetrics & Gynaecology](https://www.obgyn.cam.ac.uk/) and understand the role of the placenta through interactive hands-on activities.
@@ -9,7 +9,7 @@ Learn about the key players in a healthy pregnancy: the mum, the baby and the pl
 
 At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/), we do research on the biology and the function of the placenta. We also conduct large population studies which aim at identifying key features that could predict problems in pregnancy. Our ultimate goal is to find better ways of helping mums to give birth to healthy babies.
 
-## Quiz for the Science Festival 2020
+## Quiz for **it takes 3 to Tango** 
 * [:woman:](https://sung.github.io/CamObsGynCSF2020/pregnancy_myth.html)
 * [:baby:](https://sung.github.io/CamObsGynCSF2020/baby_scan.html)
 * [Placenta]()
@@ -19,10 +19,10 @@ At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/),
 * [Web site](https://sung.github.io/CamObsGynCSF2020)
 * The quiz website shown above has been cloned and moditifed from [this github project](https://github.com/UrbanInstitute/barriers-homeownership-quiz)
 
-## Authors
+## Contributors
 * **[Sung](https://sung.github.io)** - *quiz and most of geeky stuff including this site* 
 * **Irving** - *communication and organisation*
 * **Ulla** - *communication and organisation*
 * **Dafina** - *quiz and badges*
-* **Francesca** - *inital idea of this event*
-* **Ionel** - *the mum and the placenta side*
+* **Francesca** - *inital idea of this event and the mum poster*
+* **Ionel** - *the mum and the placenta side posters*
