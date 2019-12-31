@@ -6,7 +6,7 @@ We are postdocs from the [Department of Obs & Gynae](https://www.obgyn.cam.ac.uk
 
 ## Description
 <p align="center">
-<img width="460" height="300" src="img/take3_to_tango.png">
+<img width="460" height="360" src="img/take3_to_tango.png">
 </p>
 
 Learn about the key players in a healthy pregnancy: the mum, the baby and the placenta. Discuss the latest research at the [Department of Obstetrics & Gynaecology](https://www.obgyn.cam.ac.uk/) and understand the role of the placenta through interactive hands-on activities.
