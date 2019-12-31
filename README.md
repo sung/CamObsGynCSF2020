@@ -1,4 +1,5 @@
 # It takes 3 to Tango: Key players for a successful pregnancy ![](img/qrplot.png)
+<img align="right" src="img/qrplot.png">
 Hello! 
 We are postdocs from the [Department of Obs & Gynae](https://www.obgyn.cam.ac.uk/), [University of Cambridge](https://www.cam.ac.uk/) and we run a [Science Festival](https://www.sciencefestival.cam.ac.uk/) stall.
 
