@@ -5,9 +5,31 @@
 
 ;(function($) {
 
+// onload modal screen by Sung
+var stallAttend=0;
+$(window).load(function(){
+    swal({
+            title: "Have you looked our stall yet?",
+            type: "info",
+            showCancelButton: true,
+            confirmButtonText: "Yes, I've been through!",
+            cancelButtonText: "No, I haven't yet.",
+            closeOnConfirm: false,
+            closeOnCancel: false
+    }, 
+    function(isConfirm) {
+        if (isConfirm) {
+            stallAttend=1;
+            swal("Thanks!", "Enjoy the quiz.", "success");
+        } else {
+            swal("OK", "Please visit our stall and have this test again", "error");
+        }
+    });
+});
+
+
 // keep track of number of quizes added to page
 var quiz_count = 0;
-
 
 // add jQuery selection method to create
 // quiz structure from question json file
@@ -112,15 +134,12 @@ var $dummy = $("<div>")
       $quiz.carousel('next');
       $indicators.addClass('show');
 
-    $(".active .quiz-button.btn").each(function(){
-      console.log(this.getBoundingClientRect())
-      $(this).css("margin-left", function(){
+      $(".active .quiz-button.btn").each(function(){
+        console.log(this.getBoundingClientRect())
+        $(this).css("margin-left", function(){
         return ((250 - this.getBoundingClientRect().width) *0.5) + "px"
+        })
       })
-    })
-
-
-
     })
     .appendTo($start_button);
 
@@ -259,6 +278,19 @@ var $dummy = $("<div>")
               .removeClass('dark')
               .eq(0)
               .addClass('dark');
+
+            // below to store the final score to google firestore
+            var newScore={
+                target: quiz_opts.title, 
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                attend: stallAttend,
+                score: state.correct
+            };
+            // below from Sung via google firestore
+            var db = firebase.firestore();
+            var newScoreRef = db.collection("quiz_score").doc();
+            newScoreRef.set(newScore);
+
           } else {
             // indicate the question number
             $indicators.find('li')
@@ -343,15 +375,6 @@ var $dummy3 = $("<div>")
       .attr('height', $quiz.height() + "px");
   });
 
-    // below from Sung via google firestore
-    //var newScoreRef = db.collection("quiz_score").doc();
-    //var newScore={
-    //    target: quiz_opts.title, 
-    //    timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    //    attend: stallAttend,
-    //    score: state.correct
-    //};
-    //newScoreRef.set(newScore);
 } // end of render()
 
 function resultsText(state) {

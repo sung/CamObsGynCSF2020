@@ -29,6 +29,7 @@
   <link rel="shortcut icon" href="favicon.ico">
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
   <script src="sweet-alert.min.js"></script>
   <script src="quiz.js"></script>
   <style>
@@ -54,8 +55,8 @@
 </head>
 <body>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145279805-2"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145279805-2"></script>
     <script>
           window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -64,6 +65,31 @@
           gtag('config', 'UA-145279805-2');
     </script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+                apiKey: "AIzaSyBVYN87344LQ282Wf2_EM-hKiaAUZX9uGg",
+                authDomain: "camobsgyncsf2020.firebaseapp.com",
+                databaseURL: "https://camobsgyncsf2020.firebaseio.com",
+                projectId: "camobsgyncsf2020",
+                storageBucket: "camobsgyncsf2020.appspot.com",
+                messagingSenderId: "818926273791",
+                appId: "1:818926273791:web:9ba9b4c00c0c7f5da5f8ca",
+                measurementId: "G-4MW2JDWN0C"
+              
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 
       <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top hidesharenav" role="navigation" id="topNav">
@@ -95,20 +121,16 @@
 
 <!-- Begin Body -->
 
-
-
   <div class="container-fluid">
     <div id="quiz"></div>
   </div>
 
-<div id = "footer">
-  <div id = "footer_text">
-  </div>
-  <div id = "credits-button">View credits</div>
-  <div id = "github-link">Copyright &copy; <a href = "https://sung.github.io">Sung Gong</a> March 2020. <a href = "https://github.com/sung/CamObsGynCSF2020">View this project on Github</a>.</div>
-  <div id = "credits-text"></div>
-</div>
-
+    <div id = "footer">
+        <div id = "footer_text"></div>
+        <div id = "credits-button">View credits</div>
+        <div id = "github-link">Copyright &copy; <a href = "https://sung.github.io">Sung Gong</a> March 2020. <a href = "https://github.com/sung/CamObsGynCSF2020">View this project on Github</a>.</div>
+        <div id = "credits-text"></div>
+    </div>
 
   <script>
         function toggle_visibility(id) {
@@ -172,9 +194,7 @@
         height: taller
       })
     }
-
   })
-
 
     var lastScrollTop = 0;
     var animating = false;
@@ -196,27 +216,6 @@
         }
         }
     lastScrollTop = st;
-    });
-
-    var stallAttend=0;
-    $(window).load(function(){
-        swal({
-                title: "Have you looked our stall yet?",
-                type: "info",
-                showCancelButton: true,
-                confirmButtonText: "Yes, I've been through!",
-                cancelButtonText: "No, I haven't yet.",
-                closeOnConfirm: false,
-                closeOnCancel: false
-        }, 
-        function(isConfirm) {
-            if (isConfirm) {
-                stallAttend=1;
-                swal("Thanks!", "Enjoy the quiz.", "success");
-            } else {
-                swal("OK", "Please visit our stall and have this test again", "error");
-            }
-        });
     });
 
     $(function() {

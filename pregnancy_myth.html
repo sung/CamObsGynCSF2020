@@ -32,14 +32,6 @@
   <!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
   <script src="sweet-alert.min.js"></script><!-- probably 1.x-->
   <script src="quiz.js"></script>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
-
   <style>
     #quiz {
       height: 600px;
@@ -63,8 +55,8 @@
 </head>
 <body>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145279805-2"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145279805-2"></script>
     <script>
           window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -73,6 +65,31 @@
           gtag('config', 'UA-145279805-2');
     </script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+                apiKey: "AIzaSyBVYN87344LQ282Wf2_EM-hKiaAUZX9uGg",
+                authDomain: "camobsgyncsf2020.firebaseapp.com",
+                databaseURL: "https://camobsgyncsf2020.firebaseio.com",
+                projectId: "camobsgyncsf2020",
+                storageBucket: "camobsgyncsf2020.appspot.com",
+                messagingSenderId: "818926273791",
+                appId: "1:818926273791:web:9ba9b4c00c0c7f5da5f8ca",
+                measurementId: "G-4MW2JDWN0C"
+              
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 
       <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top hidesharenav" role="navigation" id="topNav">
@@ -104,39 +121,18 @@
 
 <!-- Begin Body -->
 
-
-
   <div class="container-fluid">
     <div id="quiz"></div>
   </div>
 
-<div id = "footer">
-  <div id = "footer_text">
-  </div>
-  <div id = "credits-button">View credits</div>
-  <div id = "github-link">Copyright &copy; <a href = "https://sung.github.io">Sung Gong</a> March 2020. <a href = "https://github.com/sung/CamObsGynCSF2020">View this project on Github</a>.</div>
-  <div id = "credits-text"></div>
-</div>
+    <div id = "footer">
+        <div id = "footer_text"></div>
+        <div id = "credits-button">View credits</div>
+        <div id = "github-link">Copyright &copy; <a href = "https://sung.github.io">Sung Gong</a> March 2020. <a href = "https://github.com/sung/CamObsGynCSF2020">View this project on Github</a>.</div>
+        <div id = "credits-text"></div>
+    </div>
 
     <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-                apiKey: "AIzaSyBVYN87344LQ282Wf2_EM-hKiaAUZX9uGg",
-                authDomain: "camobsgyncsf2020.firebaseapp.com",
-                databaseURL: "https://camobsgyncsf2020.firebaseio.com",
-                projectId: "camobsgyncsf2020",
-                storageBucket: "camobsgyncsf2020.appspot.com",
-                messagingSenderId: "818926273791",
-                appId: "1:818926273791:web:9ba9b4c00c0c7f5da5f8ca",
-                measurementId: "G-4MW2JDWN0C"
-              
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
-
-  <script>
         function toggle_visibility(id) {
             var e = document.getElementById(id);
             if (e.style.display == 'inline-block')
@@ -161,96 +157,71 @@
         //     }
         // });
 
-  $("#credits-button").click(function(){
-      var text = "The quiz is prepared by Dafina Angeova, Ulla Sovio, Gordon Smith and Sung Sam Gong.<br>Also thanks to Irving Aye; Ionel Sandovici; Francesca Gaccioli and other members of SPROG<br>This site is cloned and moditifed from <a href='https://github.com/UrbanInstitute/barriers-homeownership-quiz'>this github project</a>"
-    var W = window.innerWidth;
-    var shorter, taller;
-    if(W > 1300){
-      shorter = "50px"
-    }
-    else if(W > 665){
-      shorter = "65px";
-    }
-    else if(W > 460){
-      shorter = "75px"
-    }
-    else if(W >340){
-      shorter = "90px"
-    }else{
-      shorter = "115px"
-    }
-    // shorter = $("#footer").css("height")
-    taller = (parseInt(shorter.replace("px",""))*2.8) + "px"
-    // else if(W <=)
-    if($(this).hasClass("open")){
-      $(this).removeClass("open")
-      $("#credits-button").text("View credits")
-      $("#footer").animate({
-        height: shorter
-      }, function(){
-          $("#credits-text").html("")
-      })
-    }else{
-      $(this).addClass("open")
-      $("#credits-button").text("Hide credits")
-      $("#credits-text").html(text)
-      $("#footer").animate({
-        height: taller
-      })
-    }
-
-  })
-
-
-    var lastScrollTop = 0;
-    var animating = false;
-    $(window).on("scroll", function(event){
-    var st = $(this).scrollTop();
-    if(! animating){
-        console.log(st, lastScrollTop)
-        if (st > lastScrollTop){
-                // console.log("down")
-            animating = true;
-            $(".topnav").finish().animate({top:"-80px"}, 600, function(){ animating = false})
-            // $("#footer").finish().animate({bottom:"0px"}, 600, function(){ animating = false})
-        } else {
-            // upscroll code
-            // console.log("up")
-            animating = true;
-            $(".topnav").finish().animate({top:"0px"}, 600, function(){ animating = false})
-            // $("#footer").finish().animate({bottom:"-80px"}, 600, function(){ animating = false})
-        }
-        }
-    lastScrollTop = st;
-    });
-
-    var stallAttend=0;
-    $(window).load(function(){
-        swal({
-                title: "Have you looked our stall yet?",
-                type: "info",
-                showCancelButton: true,
-                confirmButtonText: "Yes, I've been through!",
-                cancelButtonText: "No, I haven't yet.",
-                closeOnConfirm: false,
-                closeOnCancel: false
-        }, 
-        function(isConfirm) {
-            if (isConfirm) {
-                stallAttend=1;
-                swal("Thanks!", "Enjoy the quiz.", "success");
-            } else {
-                swal("OK", "Please visit our stall and have this test again", "error");
+        $("#credits-button").click(function(){
+            var text = "The quiz is prepared by Dafina Angeova, Ulla Sovio, Gordon Smith and Sung Sam Gong.<br>Also thanks to Irving Aye; Ionel Sandovici; Francesca Gaccioli and other members of SPROG<br>This site is cloned and moditifed from <a href='https://github.com/UrbanInstitute/barriers-homeownership-quiz'>this github project</a>"
+            var W = window.innerWidth;
+            var shorter, taller;
+            if(W > 1300){
+            shorter = "50px"
             }
+            else if(W > 665){
+            shorter = "65px";
+            }
+            else if(W > 460){
+            shorter = "75px"
+            }
+            else if(W >340){
+            shorter = "90px"
+            }else{
+            shorter = "115px"
+            }
+            // shorter = $("#footer").css("height")
+            taller = (parseInt(shorter.replace("px",""))*2.8) + "px"
+            // else if(W <=)
+            if($(this).hasClass("open")){
+            $(this).removeClass("open")
+            $("#credits-button").text("View credits")
+            $("#footer").animate({
+                height: shorter
+            }, function(){
+                $("#credits-text").html("")
+            })
+            }else{
+            $(this).addClass("open")
+            $("#credits-button").text("Hide credits")
+            $("#credits-text").html(text)
+            $("#footer").animate({
+                height: taller
+            })
+            }
+        })
+
+        var lastScrollTop = 0;
+        var animating = false;
+        $(window).on("scroll", function(event){
+        var st = $(this).scrollTop();
+        if(! animating){
+            console.log(st, lastScrollTop)
+            if (st > lastScrollTop){
+                    // console.log("down")
+                animating = true;
+                $(".topnav").finish().animate({top:"-80px"}, 600, function(){ animating = false})
+                // $("#footer").finish().animate({bottom:"0px"}, 600, function(){ animating = false})
+            } else {
+                // upscroll code
+                // console.log("up")
+                animating = true;
+                $(".topnav").finish().animate({top:"0px"}, 600, function(){ animating = false})
+                // $("#footer").finish().animate({bottom:"-80px"}, 600, function(){ animating = false})
+            }
+            }
+        lastScrollTop = st;
         });
-    });
 
-    $(function() {
-      //$('#quiz').quiz("pregnancy_myth.json",stallAttend);
-      $('#quiz').quiz("pregnancy_myth.json");
-    });
-
-  </script>
+        $(function() {
+            $('#quiz').quiz("pregnancy_myth.json");
+        });
+    </script>
 
 </body>
 </html>
