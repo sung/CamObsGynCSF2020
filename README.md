@@ -23,7 +23,7 @@ At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/),
 ## Links 
 * [Source code](https://github.com/sung/CamObsGynCSF2020)
 * [Web site](https://sung.github.io/CamObsGynCSF2020)
-* The quiz website shown above has been cloned and moditifed from [this github project](https://github.com/UrbanInstitute/barriers-homeownership-quiz)
+* The quiz websites shown above were cloned and modified from [here](https://github.com/UrbanInstitute/barriers-homeownership-quiz)
 
 ## Contributors
 * **[Sung](https://sung.github.io)** - *quiz and most of geeky stuff including this site* 
@@ -37,3 +37,4 @@ At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/),
 * This project is funded by Public Engagment Starter Fund, University of Cambridge
 
 ## Copyright
+* &copy; 2020 SPROG
