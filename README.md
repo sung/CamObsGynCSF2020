@@ -12,5 +12,10 @@ a [Science Festival](https://www.sciencefestival.cam.ac.uk/) stall from [the Dep
 * [Source code](https://github.com/sung/CamObsGynCSF2020)
 * [Web site](https://sung.github.io/CamObsGynCSF2020)
 
-----
-Developed and maintained by [Sung Gong](https://sung.github.io)
+## Authors
+* **[Sung Gong](https://sung.github.io)** - *most of geeky stuff including this sites* 
+* **Irving** - *communication and organisation*
+* **Ulla** - *communication and organisation*
+* **Dafina** - *quiz and badges*
+* **Francesca** - *inital idea of this event*
+* **Ionel** - *the mum and the placenta side*
