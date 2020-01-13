@@ -19,16 +19,16 @@
         "Grows into the wall of the womb and is joined to the fetus by the umbilical cord",
         "Provides oxygen to the growing baby and removes waste substances",
         "Protects the baby against infections",
-        "Produces hormones which support the pregnancy",
-        "All of the above"
+        "Protects the baby against the effects of smoking and alcohol",
+        "Produces hormones which support the pregnancy"
       ],
       "correct": {
-        "index": 4
+        "index": 3
       },
       "image": "images/kelly-sikkema-IE8KfewAp-w-unsplash.jpg",
       "image_credit": "Kelly Sikkema",
-      "number": 2,
-      "prompt": "What does the placenta do?"
+      "number": 3,
+      "prompt": "What does NOT the placenta do?"
     },
     {
       "answers": [
@@ -42,8 +42,39 @@
       },
       "image": "images/zach-lucero-fwjsBPbRm4g-unsplash.jpg",
       "image_credit": "Zach Lucero",
-      "number": 3,
+      "number": 4,
       "prompt": "How can the pregnant mother keep the placenta healthy?"
+    },
+    {
+      "answers": [
+        "Cells from the embryo"
+      ],
+      "correct": {},
+      "number": 5,
+      "prompt": "What forms the baby\u2019s side of the placenta?"
+    },
+    {
+      "answers": [
+        "Most bacteria",
+        "Nutrients and oxygen",
+        "Nicotine-Stress hormones"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "number": 6,
+      "prompt": "What can NOT pass the placenta from the mother to the baby?"
+    },
+    {
+      "answers": [
+        "500 g",
+        "1000 g"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "number": 7,
+      "prompt": "How much does placenta weigh at the end of full-term pregnancy?"
     }
   ],
   "title": "The placenta quiz",
