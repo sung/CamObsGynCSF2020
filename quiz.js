@@ -9,11 +9,11 @@
 var stallAttend=0;
 $(window).load(function(){
     swal({
-            title: "Have you looked our stall yet?",
+            title: "Have you looked at our stall yet?",
             type: "info",
             showCancelButton: true,
-            confirmButtonText: "Yes, I've been through!",
-            cancelButtonText: "No, I haven't yet.",
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
             closeOnConfirm: false,
             closeOnCancel: false
     }, 
@@ -22,7 +22,7 @@ $(window).load(function(){
             stallAttend=1;
             swal("Thanks!", "Enjoy the quiz.", "success");
         } else {
-            swal("OK", "Please visit our stall and have this test again", "error");
+            swal("OK", "Please visit our stall after the quiz :)", "error");
         }
     });
 });
