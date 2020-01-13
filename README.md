@@ -3,7 +3,8 @@
 
 Hello! 
 We are postdocs from the [Department of Obs & Gynae](https://www.obgyn.cam.ac.uk/), [University of Cambridge](https://www.cam.ac.uk/) and we run a [Science Festival](https://www.sciencefestival.cam.ac.uk/) stall.
-<img wdith="360" height="300" src="img/Yellow-03.jpg">
+
+<img align="left" wdith="360" height="300" src="img/Yellow-03.jpg">
 
 ## Description
 <p align="center">

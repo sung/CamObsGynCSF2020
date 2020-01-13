@@ -16,6 +16,19 @@
     },
     {
       "answers": [
+        "the baby",
+        "the mother"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "image": "images/sean-roy-wdx65cr1xJ8-unsplash.jpg",
+      "image_credit": "Sean Roy",
+      "number": 2,
+      "prompt": "The placental genome and the organ come from whom?"
+    },
+    {
+      "answers": [
         "Grows into the wall of the womb and is joined to the fetus by the umbilical cord",
         "Provides oxygen to the growing baby and removes waste substances",
         "Protects the baby against infections",
@@ -47,11 +60,14 @@
     },
     {
       "answers": [
-        "Cells from the embryo"
+        "Cells from the embryo",
+        "Cells from the lining of the womb"
       ],
-      "correct": {},
+      "correct": {
+        "index": 0
+      },
       "number": 5,
-      "prompt": "What forms the baby\u2019s side of the placenta?"
+      "prompt": "What forms the baby's side of the placenta?"
     },
     {
       "answers": [
@@ -67,14 +83,25 @@
     },
     {
       "answers": [
-        "500 g",
-        "1000 g"
+        "500g",
+        "1000g",
+        "1500g"
       ],
       "correct": {
         "index": 0
       },
       "number": 7,
-      "prompt": "How much does placenta weigh at the end of full-term pregnancy?"
+      "prompt": "How much does the placenta weigh at the end of full-term pregnancy?"
+    },
+    {
+      "answers": [
+        "To understand how to best keep the placenta healthy during pregnancy",
+        "To understand placental function and the impact of its disruption on fetal development",
+        "To develop new tests and therapies to prevent placenta-related problems in pregnancy"
+      ],
+      "correct": {},
+      "number": 8,
+      "prompt": "Why are researchers interested in studying the placenta?"
     }
   ],
   "title": "The placenta quiz",
