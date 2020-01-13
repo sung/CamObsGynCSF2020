@@ -18,7 +18,7 @@ At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/),
 ## Quiz for **it takes 3 to Tango** 
 * [:woman:](https://sung.github.io/CamObsGynCSF2020/pregnancy_myth.html)
 * [:baby:](https://sung.github.io/CamObsGynCSF2020/baby_scan.html)
-* [Placenta]()
+* [Placenta](https://sung.github.io/CamObsGynCSF2020/placenta_quiz.html)
 
 ## Links 
 * [Source code](https://github.com/sung/CamObsGynCSF2020)

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ObsGynaeCam">
+  <meta name="twitter:creator" content="@sunggong">
+  <meta name="twitter:title" content="Pregnancy Myth Quiz">
+  <meta name="twitter:description" content="Test your knowledge about the placenta during pregnancy.">
+  <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/478174073386577920/KhPCN0HA_400x400.jpeg">
+  <meta property="og:title" content="the placenta quiz" />
+  <meta property="og:description" content="Test your knowledge about the placenta during pregnancy." />
+  <meta property="og:image" content="https://pbs.twimg.com/profile_images/478174073386577920/KhPCN0HA_400x400.jpeg" />
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:url" content="https://sung.github.io/CamObsGynCSF2020">
+  <title>The placenta quiz</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/urban-header.css">
+  <link rel="stylesheet" type="text/css" href="sweet-alert.css">
+  <link rel="stylesheet" href="quiz.css">
+  <!--<link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">-->
+  <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- <link rel="stylesheet" href="bootstrap-3.3.2/css/bootstrap.css"> -->
+  <link rel='stylesheet' href='css/style.css'>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
+  <script src="sweet-alert.min.js"></script>
+  <script src="quiz.js"></script>
+  <style>
+    #quiz {
+      height: 600px;
+      display: block;
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Placenta Quiz",
+        "url": "https://sung.github.io/CamObsGynCSF2020",
+        "dateCreated": "2019-12-30",
+        "articleSection": "Interactive Feature",
+        "creator": ["Sung Gong"],
+        "keywords": ["Pregancy Quiz"]
+    }
+  </script>
+
+</head>
+<body>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145279805-2"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+          gtag('config', 'UA-145279805-2');
+    </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+                apiKey: "AIzaSyBVYN87344LQ282Wf2_EM-hKiaAUZX9uGg",
+                authDomain: "camobsgyncsf2020.firebaseapp.com",
+                databaseURL: "https://camobsgyncsf2020.firebaseio.com",
+                projectId: "camobsgyncsf2020",
+                storageBucket: "camobsgyncsf2020.appspot.com",
+                messagingSenderId: "818926273791",
+                appId: "1:818926273791:web:9ba9b4c00c0c7f5da5f8ca",
+                measurementId: "G-4MW2JDWN0C"
+              
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+      <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top hidesharenav" role="navigation" id="topNav">
+       <div id="header-pinned" class="no-touch">
+           <a target="_blank" href="https://www.obgyn.cam.ac.uk/" title="Home" rel="home" class="site-logo"></a>
+            <div class="title">
+                <span class="feature-link"><a href="https://www.obgyn.cam.ac.uk/" class="title-linkback" alt="Dept Obs Gyn logo">Dept Obs and Gyn, University of Cambridge</a></span>
+            </div>
+            <div class="share-icons">
+                <div class="shareThisP">
+                    <span onclick="toggle_visibility('shareBox');">
+                            <div class="shareThisB"></div>
+                        </span>
+                    <div class="shareThisW" id="shareBox">
+
+                        <div class="addthis_toolbox addthis_default_style " addthis:title="" addthis:url="">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//sung.github.io/CamObsGynCSF2020" target="_blank" class="addthis_button_facebook at300b" title="Facebook" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span></a>
+
+                            <a href="https://twitter.com/intent/tweet?text=The%20placenta%quiz%3A%20https%3A%2F%2Fsung.github.io%2FCamObsGynCSF2020%20(via%20%40ObsGynaeCam and %20%40sunggong)" target="_blank" class="addthis_button_twitter at300b" title="Tweet" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-twitter" style="background-color: rgb(44, 168, 210);"><span class="at_a11y">Share on twitter</span></span></a>
+
+                            <a href="mailto:%20?Subject= Take thhe ObsGyn’s placenta quiz &amp;Body= Test your knowledge of the placenta during pregnancy: https://sung.github.io/CamObsGynCSF2020" target="_blank" class="addthis_button_email at300b" target="_blank" title="Email" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a>
+                            <div class="atclear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Begin Body -->
+
+  <div class="container-fluid">
+    <div id="quiz"></div>
+  </div>
+
+    <div id = "footer">
+        <div id = "footer_text"></div>
+        <div id = "credits-button">View credits</div>
+        <div id = "github-link">Copyright &copy; <a href = "https://sung.github.io">Sung Gong</a> March 2020. <a href = "https://github.com/sung/CamObsGynCSF2020">View this project on Github</a>.</div>
+        <div id = "credits-text"></div>
+    </div>
+
+  <script>
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if (e.style.display == 'inline-block')
+                e.style.display = 'none';
+            else
+                e.style.display = 'inline-block';
+        }
+
+        // $(function () {
+        //     var shrinkHeader = 200;
+        //     $(window).scroll(function () {
+        //         var scroll = getCurrentScroll();
+        //         if (scroll >= shrinkHeader) {
+        //             $('#header-pinned').addClass('is-visible');
+        //         } else {
+        //             $('#header-pinned').removeClass('is-visible');
+        //         }
+        //     });
+
+        //     function getCurrentScroll() {
+        //         return window.pageYOffset || document.documentElement.scrollTop;
+        //     }
+        // });
+
+  $("#credits-button").click(function(){
+      var text = "The quiz is prepared by Dafina Angeova, Ulla Sovio, Gordon Smith and Sung Sam Gong.<br>Also thanks to Irving Aye; Ionel Sandovici; Francesca Gaccioli and other members of SPROG<br>This site is cloned and moditifed from <a href='https://github.com/UrbanInstitute/barriers-homeownership-quiz'>this github project</a>"
+    var W = window.innerWidth;
+    var shorter, taller;
+    if(W > 1300){
+      shorter = "50px"
+    }
+    else if(W > 665){
+      shorter = "65px";
+    }
+    else if(W > 460){
+      shorter = "75px"
+    }
+    else if(W >340){
+      shorter = "90px"
+    }else{
+      shorter = "115px"
+    }
+    // shorter = $("#footer").css("height")
+    taller = (parseInt(shorter.replace("px",""))*2.8) + "px"
+    // else if(W <=)
+    if($(this).hasClass("open")){
+      $(this).removeClass("open")
+      $("#credits-button").text("View credits")
+      $("#footer").animate({
+        height: shorter
+      }, function(){
+          $("#credits-text").html("")
+      })
+    }else{
+      $(this).addClass("open")
+      $("#credits-button").text("Hide credits")
+      $("#credits-text").html(text)
+      $("#footer").animate({
+        height: taller
+      })
+    }
+  })
+
+    var lastScrollTop = 0;
+    var animating = false;
+    $(window).on("scroll", function(event){
+    var st = $(this).scrollTop();
+    if(! animating){
+        console.log(st, lastScrollTop)
+        if (st > lastScrollTop){
+                // console.log("down")
+            animating = true;
+            $(".topnav").finish().animate({top:"-80px"}, 600, function(){ animating = false})
+            // $("#footer").finish().animate({bottom:"0px"}, 600, function(){ animating = false})
+        } else {
+            // upscroll code
+            // console.log("up")
+            animating = true;
+            $(".topnav").finish().animate({top:"0px"}, 600, function(){ animating = false})
+            // $("#footer").finish().animate({bottom:"-80px"}, 600, function(){ animating = false})
+        }
+        }
+    lastScrollTop = st;
+    });
+
+    $(function() {
+      $('#quiz').quiz("placenta_quiz.json");
+    });
+  </script>
+
+<!--
+  <script>
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function () { 
+  (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),  m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m) 
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); 
+  ga('create', 'UA-392952-1', 'auto'); 
+  ga('send', 'pageview');
+  </script>
+  -->
+
+</body>
+</html>
