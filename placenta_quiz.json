@@ -66,6 +66,8 @@
       "correct": {
         "index": 0
       },
+      "image": "images/zach-lucero-fwjsBPbRm4g-unsplash.jpg",
+      "image_credit": "Zach Lucero",
       "number": 5,
       "prompt": "What forms the baby's side of the placenta?"
     },
@@ -73,11 +75,14 @@
       "answers": [
         "Most bacteria",
         "Nutrients and oxygen",
-        "Nicotine-Stress hormones"
+        "Nicotine-Stress hormones",
+        "Antibodies"
       ],
       "correct": {
         "index": 0
       },
+      "image": "images/sean-roy-wdx65cr1xJ8-unsplash.jpg",
+      "image_credit": "Sean Roy",
       "number": 6,
       "prompt": "What can NOT pass the placenta from the mother to the baby?"
     },
@@ -90,6 +95,8 @@
       "correct": {
         "index": 0
       },
+      "image": "images/kelly-sikkema-IE8KfewAp-w-unsplash.jpg",
+      "image_credit": "Kelly Sikkema",
       "number": 7,
       "prompt": "How much does the placenta weigh at the end of full-term pregnancy?"
     },
@@ -97,9 +104,14 @@
       "answers": [
         "To understand how to best keep the placenta healthy during pregnancy",
         "To understand placental function and the impact of its disruption on fetal development",
-        "To develop new tests and therapies to prevent placenta-related problems in pregnancy"
+        "To develop new tests and therapies to prevent placenta-related problems in pregnancy",
+        "All of the above"
       ],
-      "correct": {},
+      "correct": {
+        "index": 3
+      },
+      "image": "images/zach-lucero-fwjsBPbRm4g-unsplash.jpg",
+      "image_credit": "Zach Lucero",
       "number": 8,
       "prompt": "Why are researchers interested in studying the placenta?"
     }
