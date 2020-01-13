@@ -22,7 +22,7 @@ $(window).load(function(){
             stallAttend=1;
             swal("Thanks!", "Enjoy the quiz.", "success");
         } else {
-            swal("OK", "Please visit our stall after the quiz :)", "error");
+            swal("No problem!", "Please visit our stall after having the quiz :)", "error");
         }
     });
 });
