@@ -1,5 +1,4 @@
 # It takes 3 to Tango: Key players for a successful pregnancy
-<img align="left" wdith="360" height="300" src="img/Yellow-03.jpg">
 <img align="right" src="img/qrplot.png">
 
 Hello! 
@@ -39,3 +38,6 @@ At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/),
 
 ## Copyright
 * &copy; 2020 SPROG
+
+---
+<img align="left" wdith="360" height="300" src="img/Yellow-03.jpg">
