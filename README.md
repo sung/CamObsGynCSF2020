@@ -26,12 +26,16 @@ At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/),
 * The quiz websites shown above were cloned and modified from [here](https://github.com/UrbanInstitute/barriers-homeownership-quiz)
 
 ## Contributors
-* **[Sung](https://sung.github.io)** - *quiz and most of geeky stuff including this site* 
-* **Irving** - *communication and organisation*
-* **Ulla** - *communication and organisation*
+* **Anita** - *placenta 3D printing model*
 * **Dafina** - *quiz and badges*
-* **Francesca** - *inital idea of this event and the mum poster*
-* **Ionel** - *the mum and the placenta side posters*
+* **Elin** - *the placenta poster*
+* **Francesca** - *bringing inital idea of this event and the mum poster*
+* **Fuyan** - *communication and organisation*
+* **Giulia** - *communication and organisation*
+* **Ionel** - *the mum and the baby posters*
+* **Irving** - *logistics, communication and organisation*
+* **Sung** - *quiz and most of geeky stuff including this site* 
+* **Ulla** - *communication, organisation and ideans of assessment of this event*
 
 ## Acknowledgement
 * This project is funded by Public Engagment Starter Fund, University of Cambridge
