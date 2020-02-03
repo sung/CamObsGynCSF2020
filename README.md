@@ -35,7 +35,7 @@ At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/),
 * **Ionel** - *the mum and the baby posters*
 * **Irving** - *logistics, communication and organisation*
 * **Sung** - *quiz and most of geeky stuff including this site* 
-* **Ulla** - *communication, organisation and ideans of assessment of this event*
+* **Ulla** - *communication, organisation and assessment of this event*
 
 ## Acknowledgement
 * This project is funded by Public Engagment Starter Fund, University of Cambridge
