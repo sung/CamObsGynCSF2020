@@ -22,7 +22,8 @@ $(window).load(function(){
             stallAttend=1;
             swal("Thanks!", "Enjoy the quiz.", "success");
         } else {
-            swal("No problem!", "Please visit our stall after having the quiz :)", "error");
+            // swal("No problem!", "Please visit our stall after having the quiz :)", "error");
+            swal("No problem!", "Please visit our stall after having the quiz :)", "success");
         }
     });
 });
@@ -231,7 +232,7 @@ var $dummy = $("<div>")
         });
       } else {
         opts = $.extend(opts, {
-          title: "Drat",
+          title: "Hmm",
           text: (
             "Nope, not quite right!<br/><br/>" +
             "The correct answer was \"" +
