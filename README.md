@@ -15,7 +15,12 @@ Learn about the key players in a healthy pregnancy: the mum, the baby and the pl
 
 At the [Department of Obstetrics and Gynaecology](https://www.obgyn.cam.ac.uk/), we do research on the biology and the function of the placenta. We also conduct large population studies which aim at identifying key features that could predict problems in pregnancy. Our ultimate goal is to find better ways of helping mums to give birth to healthy babies.
 
-## Quiz for **it takes 3 to Tango** 
+## Posters for **it takes 3 to Tango** 
+* [:woman:](img/Mother_poster_final.pdf)
+* [:baby:](img/Baby_poster-final.pdf)
+* [Placenta](img/Placenta_poster_final.pdf)
+
+## Quizzes for **it takes 3 to Tango** 
 * [:woman:](https://sung.github.io/CamObsGynCSF2020/pregnancy_myth.html)
 * [:baby:](https://sung.github.io/CamObsGynCSF2020/baby_scan.html)
 * [Placenta](https://sung.github.io/CamObsGynCSF2020/placenta_quiz.html)
